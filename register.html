@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </header>
+        <h1>Register</h1>
+        <main>
+            <form>
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter your Full Name" required>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your E-mail id" value="example.mail.com" readonly>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="12" max="60">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter a Password">
+                </div>
+                <div>
+                    <label for="number">Mobile</label>
+                    <input type="text" name="number" id="number" placeholder="Enter Your Mobile Number without country code" disabled>
+                </div>
+                <div>
+                    <label>Gender :</label>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="gender">
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="gender">
+                    <label>Other</label>
+                    <input type="radio" name="gender" value="gender">
+
+                </div>
+                <div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </main>
+    
+</body>
+</html>
