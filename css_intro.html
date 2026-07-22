@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         *{
             margin: 0;
@@ -14,6 +15,7 @@
         .css-properties{
             display: flex;
             flex-wrap: wrap;
+            margin: 50px;
             
             
         }
@@ -34,9 +36,27 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;background-color : bisque;width: ; ;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Introduction to CSS</h1>
+    <header>
+        <nav>
+            <div>
+                <div class="logo">OneTeam</div>
+            </div>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="css_intro.html">CSS DEMO</a></li>
+        </ul>
+        </nav>
+        
+    </header>
+    <h1 style="text-align: center;background-color : bisque ;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Introduction to CSS</h1>
     <section id="features">
-        <h2 style="background-color: darkgrey; width: fit-content;">CSS Features</h2>
+        <div style="display: flex;justify-content: center;">
+            <h2 style="text-align: center ;background-color: darkgrey; width: fit-content;">CSS Features</h2>
+        </div>
         <div class="css-properties">
             <div class="properties">
                 <h3>The Cascade & Specificity</h3>
