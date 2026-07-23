@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
     <style>
         *{
@@ -19,7 +20,7 @@
             align-items: center;
             min-height: 100vh;
         }
-        #register-form{
+        #login-form{
             background-color: white;
             padding: 30px;
             width: 400px;
@@ -27,12 +28,20 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             
         }
-        #register-form h1{
+        #login-form h1{
             text-align: center;
         }
-        #register-form div:not(.gender){
+        #login-form .input-group{
             margin: 10px 0;
             
+        }
+        .login-options{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-options input[type="checkbox"]{
+            width:auto;
+            margin-right: 6px;
         }
         .input-group label {
             display: none;
@@ -47,36 +56,16 @@
             transform: translateY(-50%);
             color: royalblue;
         }
-        #register-form input{
+        #login-form .input-wrapper input{
             width: 100%;
             padding: 10px 10px 10px 40px;
             border-radius: 6px;
             border: 1px solid rgb(190, 187, 187);
+            transition: border-color 0.3s ease,box-shadow 0.3s ease;
         }
-        #register-form input:focus{
+        #login-form .input-wrapper input:focus{
             outline: none;
             border-color: royalblue;
-        }
-        .gender{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin: 20px 0;
-           
-        }
-        .gender-title{
-            color:darkslategray;
-            font-weight: bold;
-        }
-        .gender-option{
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: darkslategray;
-            cursor: pointer;
-        }
-        .gender-option input[type="radio"]{
-            accent-color: royalblue;
         }
         body{
             background: linear-gradient(
@@ -92,7 +81,8 @@
             margin-top: 20px;
         }
         .submit-section input[type="submit"]{
-            padding:12px 35px;
+            width:100%;
+            padding:12px;
             border: none;
             border-radius: 8px;
             background-color: royalblue;
@@ -104,17 +94,17 @@
         .submit-section input[type="submit"]:hover{
             background-color: mediumslateblue;
         }
-        .login-link{
+        .register-link{
             text-align: center;
             margin-top: 10px;
             color: darkslategray;
         }
-        .login-link a{
+        .register-link a{
             color: royalblue;
             font-weight: bold;
             text-decoration: none;
         }
-        .login-link a:hover{
+        .register-link a:hover{
             text-decoration: underline;
         }
     </style>
@@ -134,40 +124,16 @@
         </ul>
         </nav>
 
-        </header>
+    </header>
         
         <main>
-            <form id="register-form">
-                <h1 style="margin-bottom: 30px;">Register</h1>
-
-                <div class="input-group">
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-user"></i>
-                        <label>Full Name</label>
-                        <input type="text" name="full_name" id="full_name" placeholder="Enter your Full Name" required>
-                    </div>
-                </div>
+            <form id="login-form">
+                <h1 style="margin-bottom: 30px;">Login</h1>
                 <div class="input-group">
                     <label for="email">E-mail</label>
                     <div class="input-wrapper">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" name="email" id="email" placeholder="Enter your E-mail id"  >
-
-                    </div>
-                </div>
-                <div class="input-group">
-                    <label for="dob">Date of Birth</label>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-calendar"></i>
-                        <input type="date" name="dob" id="dob">
-                    </div>
-
-                </div>
-                <div class="input-group">
-                    <label for="age">Age</label>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-hashtag"></i>
-                        <input type="number" name="age" id="age" min="12" max="60" placeholder="Enter your Age">
+                        <input type="email" name="email" id="email" placeholder="Enter your E-mail" required >
 
                     </div>
                 </div>
@@ -175,41 +141,23 @@
                     <label for="password">Password</label>
                     <div class="input-wrapper">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Enter a password" required>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     </div>
                 </div>
-                <div class="input-group">
-                    <label for="number">Mobile</label>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-phone"></i>
-                        <input type="text" name="number" id="number" placeholder="Enter 10-digit Mobile Number" required>
-                    </div>
-                </div>
-                <div class="gender"> 
-                    <label class="gender-title">Gender :</label>
-                    <label  class="gender-option">
-                        <input type="radio" name="gender" value="gender">
-                        Male
-                    </label>
-                    <label  class="gender-option">
-                        <input type="radio" name="gender" value="gender">
-                        Female
-                    </label>
-                    <label  class="gender-option">
-                        <input type="radio" name="gender" value="gender">
-                        Other
-                    </label>
+                <div class="login-options">
+                    <label><input type="checkbox">Remember me</label>
                 </div>
                 <div class="submit-section">
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Login">
                 </div>
-                <p class="login-link">
-                    Already have  an account?
-                    <a href="login.html">Login</a>
+                <p class="register-link">
+                    Don't have an account?
+                    <a href="register.html">Register</a>
 
                 </p>
             </form>
         </main>
+
     
 </body>
 </html>

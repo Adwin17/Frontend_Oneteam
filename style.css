@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: antiquewhite;
+    background-color:white;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .logo{
     color: rgb(0, 0, 0);
     margin: 10px 15px;
+    display: flex;
+    align-items: center;
     font-size: large;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,8 +25,9 @@ nav{
     gap: 20px;
 
 }
-.nav-links li:hover{
-    background-color: rgb(204, 242, 230);
+.nav-links a:hover{
+    color: royalblue;
+    
 }
 .nav-links li{
     padding: 10px 10px;
@@ -38,5 +42,5 @@ nav{
     font-size: 16px;
     font-weight:bold ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(126, 58, 8);
+    color: darkslategray;
 }

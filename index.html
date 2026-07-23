@@ -3,11 +3,34 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     </head>
     <style>
         *{
             margin: 0;
             padding: 0;
+        }
+        .landing{
+            min-height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 8%;
+        }
+        .landing-content{
+            max-width: 450px;
+        }
+        .landing-content h1{
+            font-size: 45px;
+            color: royalblue;
+            margin-bottom: 20px;
+        }
+        .landing-content p{
+            font-size: 18px;
+            color: slategrey;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
         
         .landing-image{
@@ -17,27 +40,29 @@
             margin: 20px 0;
         }
         .landing-image img{
-            border-radius: 35px;
-            border: 5px solid rgb(27, 88, 142) ;
-            width: 55%;
+            width: 450px;
+            max-width: 100%;
             height: auto;
             padding: 8px;
             object-position: center;
-            background-color: antiquewhite;
+            background-color: white;
         }
     </style>
     <body>
         <header>
             <nav>
                 <div>
-                    <div class="logo">OneTeam</div>
+                    <div class="logo">
+                        <i class="fa-solid fa-music"></i>
+                        MediaHub
+                    </div>
                 </div>
                 <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="css_intro.html">CSS </a></li>
                 </ul>
                 
@@ -47,11 +72,15 @@
                 
             </nav>
         </header>
-        <h1 style="text-align:center;padding: 10px ;">Welcome to our Home Page</h1>
-        <div class="landing-image">
-            <img src="images/welcome.jpg" alt="Welcome Image">
-        </div>
-        
+        <section class="landing">
+            <div class="landing-content">
+                <h1>Welcome to MediaHub</h1>
+                <p>Listen to music,watch videos, and share your content</p>
+            </div>
+            <div class="landing-image">
+                <img src="images/welcome.jpg" alt="Welcome Image">
+            </div>
+        </section>  
         
     </body>
 </html>
