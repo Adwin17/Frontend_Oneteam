@@ -6,7 +6,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #register-form{
+            background-color: aliceblue;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            
+        }
+        #register-form h1{
+            text-align: center;
+        }
+        #register-form div{
+            margin: 6px;
+            display:grid ;
+            grid-template-columns:130px 1fr;
+            align-items: center;
+        }
+        #register-form input{
+            padding: 2px;
+            border-radius: 4px;
+            border: 1px solid darkgray;
+            
+
+        }
+        .gender{
+            display: block !important;
+           
+        }
+        body{
+            background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20210723050322/Lineargradient2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+    </style>
+    <body>
     <header>
         <nav>
             <div>
@@ -18,21 +65,23 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="register.html">Register</a></li>
-            <li><a href="css_intro.html">CSS DEMO</a></li>
+            <li><a href="css_intro.html">CSS </a></li>
         </ul>
         </nav>
 
         </header>
-        <h1>Register</h1>
+        
         <main>
-            <form>
+            <form id="register-form">
+                <h1>Register</h1>
+
                 <div>
                     <label>Full Name</label>
                     <input type="text" name="full_name" id="full_name" placeholder="Enter your Full Name" required>
                 </div>
                 <div>
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your E-mail id" value="example.mail.com" readonly>
+                    <input type="email" name="email" id="email" placeholder="Enter your E-mail id"  >
                 </div>
                 <div>
                     <label for="dob">Date of Birth</label>
@@ -44,13 +93,13 @@
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter a Password">
+                    <input type="password" name="password" id="password" placeholder="Enter a password">
                 </div>
                 <div>
                     <label for="number">Mobile</label>
-                    <input type="text" name="number" id="number" placeholder="Enter Your Mobile Number without country code" disabled>
+                    <input type="text" name="number" id="number" placeholder="Enter 10-digit Mobile Number" disabled>
                 </div>
-                <div>
+                <div class="gender"> 
                     <label>Gender :</label>
                     <label>Male</label>
                     <input type="radio" name="gender" value="gender">

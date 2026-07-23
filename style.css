@@ -10,9 +10,11 @@ nav{
 }
 
 .logo{
-    color: blue;
+    color: rgb(0, 0, 0);
     margin: 10px 15px;
-    font-size: larger;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .nav-links{
     display: flex;

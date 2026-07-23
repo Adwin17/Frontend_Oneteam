@@ -4,6 +4,28 @@
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .landing-image{
+            
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .landing-image img{
+            border-radius: 35px;
+            border: 5px solid rgb(27, 88, 142) ;
+            width: 55%;
+            height: auto;
+            padding: 8px;
+            object-position: center;
+            background-color: antiquewhite;
+        }
+    </style>
     <body>
         <header>
             <nav>
@@ -16,8 +38,8 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="register.html">Register</a></li>
-                <li><a href="css_intro.html">CSS DEMO</a></li>
-            </ul>
+                <li><a href="css_intro.html">CSS </a></li>
+                </ul>
                 
                 
                 
@@ -25,11 +47,11 @@
                 
             </nav>
         </header>
-        <h1 style="text-align:center ;">Welcome</h1>
+        <h1 style="text-align:center;padding: 10px ;">Welcome to our Home Page</h1>
+        <div class="landing-image">
+            <img src="images/welcome.jpg" alt="Welcome Image">
+        </div>
         
-        <img src="images/welcome.jpg" alt="Welcome Image"
-        style="width:70%;height: 170px;">
         
-        <h2 style="text-align: center;">Welcome to our Home Page</h2>
     </body>
 </html>
