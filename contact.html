@@ -5,26 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #banner{
+            background-image: url('https://t4.ftcdn.net/jpg/04/28/83/13/360_F_428831304_hJvIAY5N71vNZE2TOEFA19IWOlgwqJFO.jpg');
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height:400px;
+        }
+        #banner h1{
+            text-align: center;
+            padding-top: 80px;
+            color: white;
+        }
+        #banner p{
+            text-align: center;
+            margin: 20px;
+            padding: 5px;
+            color: lightgrey;
+        }
+        #contact{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.4;
+        }
+        #contact h2{
+            color: royalblue;
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .contact-details{
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid lightgray;
+            border-radius: 15px;
+            width: 400px;
+            color: darkslategray;
+            line-height: 1.8;
+        }
+        .contact-details p{
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            width: 230px;
+        }
+        .contact-details i{
+            width: 25px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <div class="logo">OneTeam</div>
+                <div class="logo">
+                    <i class="fa-solid fa-globe"></i>
+                    TechHub
+                </div>
             </div>
             <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="css_intro.html">CSS </a></li>
         </ul>
         </nav>
         
     </header>
-    <h1>Contact Us</h1>
-    <p>Contact the developer</p>
+    <div id="banner">
+        <h1>Contact Us</h1>
+        <p>Have questions or suggestions? We'd love to hear from you.</p>
+    </div>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>
+            If you have any questions, feedback, or suggestions, feel free to contact us.
+             Our team will be happy to hear from you.
+        </p>
+        <div class="contact-details">
+            <p><i class="fa-solid fa-envelope"></i>
+                E-mail: abc@techhub.in
+            </p>
+            <p><i class="fa-solid fa-phone"></i>
+                Phone: +91 1234567890
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>
+                Location: Kochi
+            </p>
+
+        </div>
+    </section>
+
+    
     
 </body>
 </html>

@@ -5,27 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #banner{
+            background-image: url('https://www.shutterstock.com/image-vector/hi-tech-circuit-board-design-260nw-2739303131.jpg');
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        #banner h1{
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+        }
+        #banner p{
+            max-width: 590px;
+            text-align: center;
+            color: lightgray;
+            margin: 15px auto 0;
+            line-height: 1.6;
+        }
+        #mission{
+            padding: 30px;
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #mission h2{
+            font-size: 26px;
+            color: royalblue;
+        }
+        #mission p{
+            line-height: 1.5;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <div class="logo">OneTeam</div>
+                <div class="logo">
+                    <i class="fa-solid fa-globe"></i>
+                    TechHub
+                </div>
             </div>
             <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="css_intro.html">CSS </a></li>
         </ul>
         </nav>
         
     </header>
-    <h1>About Us</h1>
-    <p>Working on it!
-    </p>
+    <div id="banner">
+        <h1>About TechHub</h1>
+        <p>
+            TechHub is a platform for exploring technology, coding, gadgets, and digital innovation.
+            Our goal is to help people learn more about the ever-changing world of technology.
+        </p>
+    </div>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to make technology easier to understand and help people
+            discover new ideas, tools, and skills in the digital world.
+        </p>
+    </section>
+    
+    
     
 </body>
 </html>

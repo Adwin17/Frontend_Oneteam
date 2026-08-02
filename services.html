@@ -5,38 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            text-align: center;
+            margin: 10px auto ;
+            padding-top: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: royalblue;
+        }
+        .our-services{
+            margin: 100px;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 22px;
+        }
+        .services{
+            padding: 25px;
+            width: 220px;
+            text-align: center;
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+        }
+        .services h3{
+            color: navy;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <div class="logo">OneTeam</div>
+                <div class="logo">
+                    <i class="fa-solid fa-globe"></i>
+                    TechHub
+                </div>
             </div>
             <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="css_intro.html">CSS </a></li>
         </ul>
         </nav>
         
     </header>
-    <h1>Services</h1>
-    <div>
-        <audio controls >
-        <source src="music and video/Kalapakkara.mp3" type="audio/mpeg">
-        </audio>
-        <p style="text-align: center;">Enjoy the Music</p>
+    <div class="banner">
+        <h1> Our Services</h1>
     </div>
-    <div>
-        <video controls width="640px" height="360px" loop>
-            <source src="music and video/efootball.mp4" type="video/mp4">
-        </video>
+    <section class="our-services">
+        <div class="services">
+            <h3>Web Development</h3>
+            <p>
+                Creating modern and responsive websites using the latest web technologies.
 
-    </div>
+            </p>
+        </div>
+        <div class="services">
+            <h3>UI/UX Design</h3>
+            <p>
+                Designing simple, attractive, and user-friendly digital experiences.
 
+            </p>
+        </div>
+        <div class="services">
+            <h3>Cybersecurity</h3>
+            <p>
+                Learn to stop hackers, viruses, and data leaks.
+            </p>
+        </div>
+        <div class="services">
+            <h3>Mobile Applications</h3>
+            <p>
+                Exploring innovative solutions for modern mobile applications.
+
+            </p>
+        </div>
+
+
+    </section>
+    
     
     
 </body>

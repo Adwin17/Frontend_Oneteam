@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             
+            
         }
         .css-properties{
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            margin: 50px;
-            
-            
+            margin: 50px;            
         }
         .properties{
-            width: 300px;
+            width: 400px;
             height: auto;
-            border-width: 3px;
-            border-radius: 5px;
-            border-color: black;
-            border-style: groove;
+            border-width: 2px;
+            border-radius: 8px;
+            border-color: lightslategray;
+            border-style: solid;
             margin: 10px 5px;
             padding: 5px 5px;
+            line-height: 1.2;
+            text-align: center;
         }
         .properties h3{
             text-align: center;
             text-decoration: underline rgb(56, 6, 6) solid;
+            margin: 10px 
         }
     </style>
 </head>
@@ -39,24 +44,26 @@
     <header>
         <nav>
             <div>
-                <div class="logo">OneTeam</div>
+                <div class="logo">
+                    <i class="fa-solid fa-globe"></i>
+                    TechHub
+                </div>
             </div>
             <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="css_intro.html">CSS </a></li>
         </ul>
         </nav>
         
     </header>
-    <h1 style="text-align: center;background-color : bisque ;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Introduction to CSS</h1>
+    <h1 style="text-align: center;margin: 20px;height: 50px;color:royalblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Cascading Style Sheets</h1>
     <section id="features">
         <div style="display: flex;justify-content: center;">
-            <h2 style="
-                text-align: center ;background-color: darkgrey; width: fit-content;">CSS Features</h2>
+            <h2 style="text-align: center ;padding: 8px;background-color: lightgray; width: 200px;border-radius: 10px;">CSS Features</h2>
         </div>
         <div class="css-properties">
             <div class="properties">
